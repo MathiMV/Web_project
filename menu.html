@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Search Filter</title>
+  <style>
+    /* Basic styling for the page */
+    body {
+      background:url('img/WhatsApp\ Image\ 2024-10-27\ at\ 10.42.26\ PM.jpeg');
+      background-size: auto;
+      font-family: Arial, sans-serif;
+      text-align: justify;
+      justify-content: center;
+      margin: 0;
+      padding:0;
+      position: static;
+    }
+    
+    /* Container for the filter options */
+    .filter-container {
+      
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width:auto;
+      display:flex;
+      position:absolute;
+      text-align: justify;
+      flex-direction: column;
+      align-items: center;
+      width:fit-content;
+
+    }
+
+    /* Styling for the dropdowns */
+    .filter-form {
+      display: grid;
+      position: relative;
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 10px;
+      width: auto;
+
+      
+    }
+
+    .filter-form select,
+    .filter-form input {
+      width: 100%;
+      padding: 10px;
+      margin-right: 24%;
+      gap: 100px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* Styling for the search button */
+    .search-button {
+      grid-column: span 5;
+      background-color: #021860;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .search-button:hover{
+        background-color: #086d23;
+    }
+
+    body{
+        min-height: 100vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .section {
+    padding: 4rem 0;
+    margin-top: 140px;
+    margin-left: 15px;
+      }
+  
+  .vehicle-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .vehicle-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+  }
+  
+  .vehicle-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .vehicle-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .button-secondary {
+    background-color: #555;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  h2{
+    color:rgb(232, 232, 242);
+  }
+    
+  </style>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="#">Products</a></li>
+          <li class="hideOnMobile"><a href="#">About</a></li>
+          <li class="hideOnMobile"><a href="#">Forum</a></li>
+          <li class="hideOnMobile"><a href="login.html">Login</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      
+      
+  <div class="filter-container">
+
+    <div class="filter-form">
+
+        <select>
+            <option>Any Vehicle</option>
+            <option>Car</option>
+            <option>Motorbike</option>
+            <option>Van</option>
+            <!-- Add more options as needed -->
+      </select>
+
+      <select>
+        <option>Any Make</option>
+        <option>Toyota</option>
+        <option>Nissan</option>
+        <option>Honda</option>
+        <!-- Add more options as needed -->
+      </select>
+      
+      <select>
+        <option>Any Condition</option>
+        <option>New</option>
+        <option>Used</option>
+      </select>
+      <select>
+        <option>Any City</option>
+        <option>Colombo</option>
+        <option>Kandy</option>
+        <option>Galle</option>
+        <!-- Add more options as needed -->
+      </select>
+      <select>
+        <option>Year Min</option>
+        <option>2000</option>
+        <option>2005</option>
+        <option>2010</option>
+        <!-- Add more options as needed -->
+      </select>
+      <select>
+        <option>Year Max</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <!-- Add more options as needed -->
+      </select>
+     
+        <input type="text" placeholder="Min Price">
+        <input type="text" placeholder="Max Price">
+      <select>
+        <option>Any Gear</option>
+        <option>Manual</option>
+        <option>Automatic</option>
+      </select>
+      <select>
+        <option>Any Fuel</option>
+        <option>Petrol</option>
+        <option>Diesel</option>
+        <option>Electric</option>
+      </select>
+      <button class="search-button">Search</button>
+    </div>
+  </div>
+  
+<div class="vhaicle">
+  <section id="buy" class="section">
+    <div class="container">
+      <h2>Vehicles for Sale</h2>
+
+      <p style="color: #ffffff; margin: 10px;">Discover a wide range of vehicles available for purchase.</p>
+
+
+      <div class="vehicle-grid">
+        <div class="vehicle-card">
+          <img src="img/images (1).jpg" alt="Car">
+          <h3>2021 Toyota Camry</h3>
+          <p>Price: $25,000</p>
+          <a href="#" class="button">View Details</a>
+        </div>
+        <div class="vehicle-card">
+          <img src="img/Toyota-Hiace-KDH-2.jpg" alt="Car">
+          <h3>2021 Toyota Camry</h3>
+          <p>Price: $25,000</p>
+          <a href="#" class="button">View Details</a>
+        </div>
+        <div class="vehicle-card">
+          <img src="img/images.jpg" alt="Car">
+          <h3>2021 Toyota Camry</h3>
+          <p>Price: $25,000</p>
+          <a href="#" class="button">View Details</a>
+        </div>
+        <div class="vehicle-card">
+          <img src="img/usnpx-2025hyundaitucson-angularfront-zd.jpg" alt="Car">
+          <h3>2021 Toyota Camry</h3>
+          <p>Price: $25,000</p>
+          <a href="#" class="button">View Details</a>
+        </div>
+        <div class="vehicle-card">
+          <img src="img/WhatsApp Image 2024-10-27 at 10.42.28 PM (1).jpeg" alt="Car">
+          <h3>2021 Toyota Camry</h3>
+          <p>Price: $25,000</p>
+          <a href="#" class="button">View Details</a>
+        </div>
+        <div class="vehicle-card">
+          <img src="img/WhatsApp Image 2024-10-27 at 10.42.26 PM.jpeg" alt="Car">
+          <h3>2020 Honda Accord</h3>
+          <p>Price: $20,000</p>
+          <a href="#" class="button">View Details</a>
+        </div>
+        <!-- Add more vehicle cards here -->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
