@@ -1,7 +1,12 @@
 body{
+    background-image: url("../img/WhatsApp Image 2024-10-27 at 10.42.28 PM.jpeg");
+    
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1{
+    color: aliceblue;
   }

@@ -1,22 +1,27 @@
 body {
-    background-color: #d4d4de;
-    background-size:cover;
+    background-image: url("../img/pngtree-a-car-is-displayed-on-circuit-board-with-blue-and-red-image_15995639.jpg");
+    background-blend-mode: lighten;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
     font-family: Arial, sans-serif;
     text-align: justify;
     justify-content: center;
     margin: 0;
     padding:0;
-    position: static;
+    position: static; 
   }
   
-  /* Container for the filter options */
+ 
   .filter-container {
     backdrop-filter: blur(5px);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width:100%;
-    /* display:flex; */
     position:absolute;
     text-align: justify;
     flex-direction: column;
@@ -25,7 +30,7 @@ body {
 
   }
 
-  /* Styling for the dropdowns */
+
   .filter-form {
     display: grid;
     position: relative;
@@ -48,7 +53,7 @@ body {
     gap: 10px;
   }
 
-  /* Styling for the search button */
+  
   .search-button {
     grid-column: span 5;
     background-color: #021860;
@@ -64,14 +69,6 @@ body {
   .search-button:hover{
       background-color: #086d23;
   }
-
-  body{
-      min-height: 100vh;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
 
     .section {
   padding: 4rem 0;
