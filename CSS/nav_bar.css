@@ -75,8 +75,9 @@ nav li:first-child{
   }
 }
 .footer{
-  display:inline-block;
-  width: 95%;
+  margin-top: 30px;
+  display:block;
+  width:95%;
   position:static; 
   background-color: black;
   color: #f0f0f0;
@@ -105,5 +106,12 @@ nav li:first-child{
 @media(max-width: 400px){
   .sidebar{
     width: 90%;
+  }
+  .footer{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+  .nav{
+    width: 100%;
   }
 }
