@@ -31,38 +31,39 @@
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
-  <form action="php/signup.php" method="post" id="signup">
+  <form>
     <h1>Sign up</h1>
     <div class="inputbox">
         <ion-icon name="mail-outline"></ion-icon>
+<<<<<<< HEAD
         <input type="text" name="username"required>
         <label for="">User name</label>
+=======
+        <input type="text" required>
+        <label for="">User Name</label>
+>>>>>>> refs/remotes/origin/master
     </div>
     <div class="inputbox">
         <ion-icon name="lock-closed-outline"></ion-icon>
-        <input type="password" name="password_has" id ="password" required>
+        <input type="password" required>
         <label for="">Password</label>
     </div>
     <div class="inputbox">
         <ion-icon name="lock-closed-outline"></ion-icon>
-        <input type="password" id="cpassword" required>
+        <input type="password" required>
         <label for="">Confirm Password</label>
     </div>
-    <!--  -->
-    <div class="error_message" id="error_message"><!-- Passwords do not match! --></div>
-     <button name="submit">Sign up</button>
+     <button>Sign up</button>
     <div class="register">
         <p>Alredy heve sn account <a href="login.html">  Login </a></p>
     </div>
 </form>
-
-
 <div class="footer">
   <a href="www.facebook.com" class="fa fa-facebook"></a>
   <a href="www.twiter.com" class="fa fa-twitter"></a>
   <a href="www.youtube.com" class="fa fa-youtube"></a>
   <a href="www.instagram" class="fa fa-instagram"></a>
 </div>
-<script src="JS/password.js"></script>
+
 </body>
 </html>
