@@ -1,4 +1,4 @@
-myFROM mcr.microsoft.com/devcontainers/php:1-8.2-bullseye
+FROM mcr.microsoft.com/devcontainers/php:1-8.2-bullseye
 
 # Install MariaDB client
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
