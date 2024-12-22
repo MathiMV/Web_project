@@ -26,29 +26,30 @@
       <li class="hideOnMobile"><a href="#">Blog</a></li>
       <li class="hideOnMobile"><a href="#">Products</a></li>
       <li class="hideOnMobile"><a href="#">About</a></li>
-      <li class="hideOnMobile"><a href="#">Forum</a></li>
+      <li class="hideOnMobile"><a href="form.html">Form</a></li>
       
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
   
-  <form>
+  <form action="php/login.php" method="post">
     <h1>Login</h1>
     <div class="inputbox">
         <ion-icon name="mail-outline"></ion-icon>
-        <input type="text" required>
+        <input type="text" name="name" required>
         <label for="">User name</label>
     </div>
     <div class="inputbox">
         <ion-icon name="lock-closed-outline"></ion-icon>
-        <input type="password" required>
+        <input type="password" name="password" required>
         <label for="">Password</label>
     </div>
     <div class="forget">
         <label for=""><input type="checkbox">Remember Me</label>
       <a href="#">Forget Password</a>
     </div>
-    <button>Log in</button>
+
+    <button type="submit" name="login">Log in</button>
     <div class="register">
         <p>Don't have a account <a href="signup.html">Register</a></p>
     </div>
