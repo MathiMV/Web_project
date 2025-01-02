@@ -16,7 +16,7 @@ if (isset($_POST['login'])) {
         if (password_verify($password, $hashedPassword)) {
             session_start(); 
         
-           // $_SESSION["user_name"] = $row["username"];
+           //$_SESSION["username"] = $row["username"];
            // $_SESSION['role'] = $row['role'];
             
     
