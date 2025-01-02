@@ -1,0 +1,101 @@
+body{
+    background-image: url("../img/INEOS\ Grenadier_Road\ to\ Vegas_6.jpg");
+    background-blend-mode:darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+form{
+position:relative;
+display:inline-block;
+text-align: center;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(20px);
+box-shadow: -20px 0 20px rgba(0, 0, 0, 0.5);
+box-sizing: content-box;
+box-decoration-break: clone;
+background-origin: padding-box;
+width: 400px;
+top:10px;
+margin: 10px;
+padding: 10px;
+
+}
+.inputbox {
+
+    position: relative;
+    text-align: center;
+    margin: 30px;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+    }
+    
+    .inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #03000092;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    }
+    
+    input:focus ~ label, 
+    input:valid ~ label {
+    top: -5px;
+    }
+    
+    .inputbox input {
+    display: inline-flex;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #000000;
+    }
+    .section{
+    position: relative;
+    text-align: center;
+    margin: 30px;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+    }
+    .imageup{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+      height: 40px;
+      border-radius: 40px;
+      background-color: rgb(255, 255,255, 1);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      }
+      
+      button:hover {
+      background-color: rgb(255, 255,255, 0.5);
+      }
+      
+    @media(max-width: 500px){
+        form{
+          width: 80%;
+          margin-bottom: 30px;
+        }
+        
+      }

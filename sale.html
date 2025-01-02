@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/nav_bar.css">
+    <link rel="stylesheet" href="CSS/sale.css">
+</head>
+<body>
+    <script src="JS/nav_bar.js"></script>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Form</a></li>
+      <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+      <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Forum</a></li>
+      <li class="hideOnMobile"><a href="login.html">Login</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <form action="php/sale.php" method="post" enctype="multipart/form-data">
+        <div class="inputbox">
+            <input name="username" type="text" required>
+            <label >username</label>
+        </div>
+        <div class="inputbox">
+            <input name="type" type="text" required>
+            <label >vehicle type</label>
+        </div>
+        <div class="inputbox">
+            <input name="Company" type="text" required>
+            <label >Company</label>
+        </div>
+        <div class="inputbox">
+            <input name="Condition" type="text" required>
+            <label >Condition</label>
+        </div>
+        <div class="inputbox">
+            <input name="location" type="text" required>
+            <label >location</label>
+        </div>
+        <div class="inputbox">
+            <input name="Year" type="text" required>
+            <label >Model Year</label>
+        </div>
+       
+        <div class="inputbox">
+            <input name="Price" type="text" required>
+            <label >Price</label>
+        </div>
+        
+        <div class="inputbox">
+            <input name="Gear" type="text" required>
+            <label >Gear</label>
+        </div>
+        
+        <div class="inputbox">
+            <input name="Fule" type="text" required>
+            <label >Fule</label>
+        </div>
+
+        <div class="imageup">
+            <label>Upload image</label>
+            <input type="file" name="image" accept="image/*" id="image" required>
+        
+        </div>
+       
+
+
+        <button name="submit">sumit</button>
+        
+       
+        
+        
+  </form>
+<div class="footer">
+    <a href="www.facebook.com" class="fa fa-facebook"></a>
+    <a href="www.twiter.com" class="fa fa-twitter"></a>
+    <a href="www.youtube.com" class="fa fa-youtube"></a>
+    <a href="www.instagram" class="fa fa-instagram"></a>
+</div>
+    
+</body>
+</html>
